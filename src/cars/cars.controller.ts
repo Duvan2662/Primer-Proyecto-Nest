@@ -13,12 +13,12 @@ export class CarsController {
 
     @Get()
     public getAllCars(){
-        return this.carServices.getCars;
+        return this.carServices.getCars();
     }
 
     
     @Get(':id')
-    public getCarById(@Param('id',ParseIntPipe) id:number) {
+    public getCarById(@Param('id') id:string) {
         console.log({id:id});
         return this.carServices.getCarById(id);
     }
