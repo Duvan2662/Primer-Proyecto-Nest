@@ -40,10 +40,7 @@ export class CarsController {
     }
 
     @Delete(':id')
-    public deleteCard(@Param('id',ParseIntPipe) id:number){
-        return {
-            methot: 'delete',
-            id:id,
-        }
+    public deleteCard(@Param('id',ParseUUIDPipe) id:string){
+        return this.carServices.deleteCard(id)
     }
 }
