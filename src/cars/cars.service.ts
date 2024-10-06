@@ -7,21 +7,12 @@ import { UpdateCarDto } from './dto/update-car.dto';
 @Injectable()
 export class CarsService {
     private cars:Card[] = [
-        {
-            id:uuid(),
-            brand:'Toyota',
-            model:'Corolla'
-        },
-        {
-            id:uuid(),
-            brand:'Mustang',
-            model:'Camaro'
-        },
-        {
-            id:uuid(),
-            brand:'Lamborgini',
-            model:'Aventador '
-        }
+        // {
+        //     id:uuid(),
+        //     brand:'Toyota',
+        //     model:'Corolla'
+        // },
+        
     ];
 
     
